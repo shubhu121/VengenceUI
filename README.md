@@ -1,62 +1,142 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/aed60929-0f1c-4d1b-b413-b71a92d968d4" alt="VengeanceUI Preview" width="100%" />
+</p>
+
+<h1 align="center">VengeanceUI</h1>
 
 <p align="center">
-  <!-- Repo stats -->
-  <img src="https://img.shields.io/github/stars/Ashutoshx7/VengeanceUI?style=social" />
-  <img src="https://img.shields.io/github/forks/Ashutoshx7/VengeanceUI?style=social" />
-  <img src="https://img.shields.io/github/issues/Ashutoshx7/VengeanceUI?style=social" />
+  <strong>Modern animated UI components for building beautiful landing pages faster.</strong>
 </p>
 
 <p align="center">
-  <!-- Tech stack -->
-  <img src="https://img.shields.io/badge/Next.js-black?style=social&logo=nextdotjs" />
-  <img src="https://img.shields.io/badge/React-blue?style=social&logo=react" />
-  <img src="https://img.shields.io/badge/TypeScript-blue?style=social&logo=typescript" />
-  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=social&logo=tailwindcss" />
-  <img src="https://img.shields.io/badge/Framer%20Motion-black?style=social&logo=framer" />
+  Copy. Paste. Customize. Ship.
 </p>
 
+---
 
-<a href="https://vercel.com/oss">
-  <img alt="Vercel OSS Program" src="https://vercel.com/oss/program-badge-2026.svg" />
-</a>
+<p align="center">
+  <strong>Community Token CA</strong>
+</p>
 
+<p align="center">
+  <code>C5x6c7mJsJrw23JeMF1hfZvre4gQaA5JNSSLwnjGpump</code>
+</p>
 
-
-https://github.com/user-attachments/assets/aed60929-0f1c-4d1b-b413-b71a92d968d4
-
+<p align="center">
+  <sub>Always verify the CA from official VengeanceUI sources before interacting with it.</sub>
+</p>
 
 ---
 
-# VengeanceUI
+<p align="center">
+  <a href="https://github.com/Ashutoshx7/VengeanceUI/stargazers">
+    <img src="https://img.shields.io/github/stars/Ashutoshx7/VengeanceUI?style=social" alt="GitHub stars" />
+  </a>
+  <a href="https://github.com/Ashutoshx7/VengeanceUI/forks">
+    <img src="https://img.shields.io/github/forks/Ashutoshx7/VengeanceUI?style=social" alt="GitHub forks" />
+  </a>
+  <a href="https://github.com/Ashutoshx7/VengeanceUI/issues">
+    <img src="https://img.shields.io/github/issues/Ashutoshx7/VengeanceUI?style=social" alt="GitHub issues" />
+  </a>
+</p>
 
-**VengeanceUI** is a modern, animated UI component library designed to help developers build beautiful landing pages and interfaces faster. It provides ready-to-use, copy-paste friendly components with smooth animations and clean design.
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=nextdotjs" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript" />
+  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss" />
+  <img src="https://img.shields.io/badge/Framer%20Motion-black?style=for-the-badge&logo=framer" />
+</p>
 
 ---
 
-## 🚀 Features
+<p align="center">
+  <strong>Backed by the Vercel Open Source Program</strong>
+</p>
 
-- Prebuilt UI components for landing pages
-- Smooth and modern animations
-- Copy & paste friendly components
-- Fully customizable styling
-- Clean, minimal, and modern design
-- Developer-focused DX (easy to integrate)
+<p align="center">
+  <a href="https://vercel.com/oss">
+    <img alt="Vercel OSS Program" src="https://vercel.com/oss/program-badge-2026.svg" width="260" />
+  </a>
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+
+
+https://github.com/user-attachments/assets/8d20c9ae-31a8-4284-a8ae-77ca11d15c53
+
+
+
+## About
+
+**VengeanceUI** is a modern, animated UI component library designed to help developers build beautiful landing pages and interfaces faster.
+
+It provides ready-to-use, copy-paste friendly components with smooth animations, clean design, and developer-focused implementation.
+
+The goal is simple: help builders ship better interfaces without wasting hours recreating the same UI patterns again and again.
+
+---
+
+## Features
+
+* Prebuilt UI components for landing pages and modern websites
+* Smooth, tasteful animations powered by Framer Motion
+* Copy-paste friendly implementation
+* Fully customizable styling with Tailwind CSS
+* Clean, minimal, and production-ready design
+* Developer-first DX with simple integration
+* Built for creators, startups, portfolios, SaaS pages, and product launches
+
+---
+
+## Tech Stack
 
 VengeanceUI is built using modern frontend technologies:
 
-- **React** – Component-based UI development  
-- **TypeScript** – Type safety and better developer experience  
-- **Tailwind CSS** – Utility-first styling for rapid UI development  
-- **Framer Motion** – Animations and transitions  
-- **Vite** – Fast development server and build tool  
-- **ESLint & Prettier** – Code quality and formatting  
-
+* **React** — Component-based UI development
+* **TypeScript** — Type safety and better developer experience
+* **Tailwind CSS** — Utility-first styling for rapid UI development
+* **Framer Motion** — Smooth animations and transitions
+* **Next.js** — Modern frontend framework
+* **Vite** — Fast development server and build tooling
+* **ESLint & Prettier** — Code quality and formatting
 
 ---
+
+## What You Can Build
+
+With VengeanceUI, you can quickly build:
+
+* Landing pages
+* Portfolio sections
+* SaaS hero sections
+* Animated navigation bars
+* Product showcases
+* Feature sections
+* Testimonials
+* Interactive UI blocks
+* Modern marketing websites
+
+---
+
+## Why VengeanceUI?
+
+Most UI libraries either feel too generic or require too much setup.
+
+VengeanceUI focuses on components that are:
+
+* Visually strong
+* Easy to copy
+* Easy to customize
+* Animation-ready
+* Built with modern frontend tools
+* Useful for real-world product pages
+
+It is made for developers who want to move fast without compromising design.
+
+---
+
 ## Star History
 
 <a href="https://star-history.com/#Ashutoshx7/VengeanceUI&Date">
@@ -75,8 +155,23 @@ VengeanceUI is built using modern frontend technologies:
     />
   </picture>
 </a>
-a
 
+---
 
+## Contributing
 
+Contributions are welcome.
 
+If you want to improve an existing component, add a new component, fix bugs, or improve documentation, feel free to open an issue or pull request.
+
+---
+
+## Support
+
+If you like VengeanceUI, consider giving the repository a star.
+
+It helps the project grow and reach more builders.
+
+<p align="center">
+  <strong>Built by <a href="https://github.com/Ashutoshx7">Ashutosh</a></strong>
+</p>
