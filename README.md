@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <a href="https://dexscreener.com/solana/C5x6c7mJsJrw23JeMF1hfZvre4gQaA5JNSSLwnjGpump">
+  <a href="https://dexscreener.com/solana/dypltbkb3c5c6worztaba4dghhjz7p86zvftdebvt5db">
     <strong>View on DEX Screener</strong>
   </a>
 </p>

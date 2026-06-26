@@ -5,7 +5,8 @@ export const SITE_DESCRIPTION =
 export const SITE_OG_IMAGE = "/og-image.png";
 export const COMMUNITY_TOKEN_CA =
   "C5x6c7mJsJrw23JeMF1hfZvre4gQaA5JNSSLwnjGpump";
-export const COMMUNITY_TOKEN_DEX_URL = `https://dexscreener.com/solana/${COMMUNITY_TOKEN_CA}`;
+export const COMMUNITY_TOKEN_DEX_URL =
+  "https://dexscreener.com/solana/dypltbkb3c5c6worztaba4dghhjz7p86zvftdebvt5db";
 
 export function absoluteUrl(path = "/") {
   return new URL(path, SITE_URL).toString();

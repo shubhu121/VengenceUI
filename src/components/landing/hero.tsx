@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 import { BorderBeam } from "./ui/border-beam";
 import IsometricGrid from "./ui/isometric-grid";
 import IsometricHeroBox from "./ui/isometric-hero-box";
+import { GITHUB_REPO_URL } from "@/lib/github";
 
 export const VERCEL_OSS_PROGRAM_URL = "https://vercel.com/blog/vercel-open-source-program-winter-2026-cohort#vengenceui";
 
@@ -54,7 +55,7 @@ export default function Hero() {
                             variant={"outline"}
                             size="lg"
                             className="rounded-md w-fit font-medium text-base shadow">
-                            <Link href="https://github.com/Ashutoshx7/vengeance-ui-v2">
+                            <Link href={GITHUB_REPO_URL}>
                                 View github
                             </Link>
                         </Button>

@@ -11,6 +11,7 @@ import {
   SITE_OG_IMAGE,
   SITE_URL,
 } from "@/lib/site";
+import { GITHUB_REPO_URL } from "@/lib/github";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -115,7 +116,7 @@ const structuredData = {
       name: SITE_NAME,
       url: SITE_URL,
       logo: `${SITE_URL}/logo/bg-less.png`,
-      sameAs: ["https://github.com/Ashutoshx7/vengeance-ui-v2"],
+      sameAs: [GITHUB_REPO_URL],
     },
   ],
 };
