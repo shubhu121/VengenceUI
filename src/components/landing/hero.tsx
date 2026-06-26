@@ -132,8 +132,8 @@ function CustomVideoPlayer() {
             ref={containerRef}
             onMouseEnter={() => setShowControls(true)}
             onMouseLeave={() => setShowControls(false)}
-            onClick={() => togglePlay()}
-            className="w-full aspect-video relative group bg-black/40 cursor-pointer select-none overflow-hidden"
+            onClick={(e) => togglePlay(e)}
+            className="video-player-container w-full aspect-video relative group bg-black/40 cursor-pointer select-none overflow-hidden"
         >
             <video
                 ref={videoRef}
@@ -154,12 +154,12 @@ function CustomVideoPlayer() {
                 borderWidth={1.5}
                 colorFrom="rgba(255, 255, 255, 0.45)"
                 colorTo="transparent"
-                className="block dark:opacity-40 opacity-20 pointer-events-none z-10"
+                className="border-beam block dark:opacity-40 opacity-20 pointer-events-none z-10"
             />
 
             {/* Custom controls overlay */}
             <div
-                className={`absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 pt-12 flex flex-col gap-3 transition-opacity duration-300 z-20 ${
+                className={`controls-overlay absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 pt-12 flex flex-col gap-3 transition-opacity duration-300 z-20 ${
                     showControls || !isPlaying || isDragging ? "opacity-100" : "opacity-0 pointer-events-none"
                 }`}
                 onClick={(e) => e.stopPropagation()}
@@ -184,7 +184,7 @@ function CustomVideoPlayer() {
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                         <button
-                            onClick={togglePlay}
+                            onClick={(e) => togglePlay(e)}
                             className="w-8 h-8 rounded-full flex items-center justify-center bg-white/10 hover:bg-white/20 active:scale-95 transition-all text-white border border-white/5 cursor-pointer"
                         >
                             {isPlaying ? (
@@ -201,7 +201,7 @@ function CustomVideoPlayer() {
 
                     <div className="flex items-center gap-2">
                         <button
-                            onClick={toggleMute}
+                            onClick={(e) => toggleMute(e)}
                             className="w-8 h-8 rounded-full flex items-center justify-center bg-white/10 hover:bg-white/20 active:scale-95 transition-all text-white border border-white/5 cursor-pointer"
                         >
                             {isMuted ? (
@@ -212,7 +212,7 @@ function CustomVideoPlayer() {
                         </button>
 
                         <button
-                            onClick={toggleFullscreen}
+                            onClick={(e) => toggleFullscreen(e)}
                             className="w-8 h-8 rounded-full flex items-center justify-center bg-white/10 hover:bg-white/20 active:scale-95 transition-all text-white border border-white/5 cursor-pointer"
                         >
                             {isFullscreen ? (
