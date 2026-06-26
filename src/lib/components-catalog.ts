@@ -46,6 +46,7 @@ export const COMPONENT_CATEGORIES: ComponentCategory[] = [
       { name: "Flip Fade Text", slug: "flip-fade-text", description: "Word flip and fade cycle", componentName: "flip-fade-text" },
       { name: "Liquid Text", slug: "liquid-text", description: "Fluid displacement text effect", componentName: "liquid-text" },
       { name: "Morph Text", slug: "morph-text", description: "Blur-morph word rotation effect", componentName: "morph-text", isNew: true },
+      { name: "ASCII Glitch Ripple", slug: "ascii-glitch-ripple", description: "Dynamic character-scramble wave ripple hover effect", componentName: "ascii-glitch-ripple", isNew: true },
     ],
   },
   {

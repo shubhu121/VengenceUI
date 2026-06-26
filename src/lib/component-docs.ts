@@ -146,6 +146,35 @@ export function LiquidTextDemo() {
     ],
   },
 
+  "ascii-glitch-ripple": {
+    dependencies: "npm install clsx tailwind-merge",
+    includeUtils: true,
+    usageCode: `import { AsciiGlitchRipple } from "@/components/ui/ascii-glitch-ripple"
+
+export function AsciiGlitchRippleDemo() {
+  return (
+    <AsciiGlitchRipple
+      as="a"
+      href="#"
+      dur={1000}
+      spread={1.2}
+      className="text-lg font-mono hover:text-white"
+    >
+      Roadside Picnic — Arkady & Boris Strugatsky
+    </AsciiGlitchRipple>
+  )
+}`,
+    props: [
+      { prop: "children", type: "string", defaultValue: "-", description: "The text content to display and scramble." },
+      { prop: "as", type: "React.ElementType", defaultValue: "'a'", description: "The HTML element or component to render as (e.g. 'a', 'span', 'button')." },
+      { prop: "className", type: "string", defaultValue: "-", description: "Additional CSS classes to apply to the component." },
+      { prop: "dur", type: "number", defaultValue: "1000", description: "Duration of the scramble animation wave in milliseconds." },
+      { prop: "chars", type: "string", defaultValue: "'.,·-─~+:;=*π\"\"┐┌┘┴┬╗╔╝╚╬╠╣╩╦║░▒▓█▄▀▌▐■!?&#$@0123456789*'", description: "Character set used for the glitch scrambling effect." },
+      { prop: "preserveSpaces", type: "boolean", defaultValue: "true", description: "Whether to keep original spaces unscrambled." },
+      { prop: "spread", type: "number", defaultValue: "1.0", description: "Spread factor controlling the speed and width of the ripple wave." },
+    ],
+  },
+
   "reveal-loader": {
     dependencies: "npm install @gsap/react gsap clsx tailwind-merge",
     includeUtils: true,
