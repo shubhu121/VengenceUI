@@ -21,6 +21,12 @@
 </p>
 
 <p align="center">
+  <a href="https://dexscreener.com/solana/C5x6c7mJsJrw23JeMF1hfZvre4gQaA5JNSSLwnjGpump">
+    <strong>View on DEX Screener</strong>
+  </a>
+</p>
+
+<p align="center">
   <sub>Always verify the CA from official VengeanceUI sources before interacting with it.</sub>
 </p>
 

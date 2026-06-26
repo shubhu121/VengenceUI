@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { ExternalLink } from "lucide-react";
 import {
   DocsArticle,
   DocsCodeBlock,
@@ -7,6 +9,8 @@ import {
   DocsSection,
   DocsSubsection,
 } from "@/components/docs/static-docs";
+import { CopyButton } from "@/components/ui/copy-button";
+import { COMMUNITY_TOKEN_CA, COMMUNITY_TOKEN_DEX_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Install Next.js",
@@ -23,6 +27,35 @@ export default function InstallNextjsPage() {
         title="Install Next.js"
         description="Install Next.js with Create Next App"
       />
+
+      <DocsSection title="Official CA">
+        <DocsParagraph>
+          The community token CA is published here for quick verification.
+        </DocsParagraph>
+        <div className="max-w-4xl rounded-md border bg-neutral-50 p-4 dark:bg-zinc-950">
+          <div className="mb-3 flex items-center justify-between gap-3">
+            <span className="text-sm font-medium text-neutral-700 dark:text-zinc-300">
+              Community Token CA
+            </span>
+            <CopyButton
+              code={COMMUNITY_TOKEN_CA}
+              className="border-neutral-200 bg-white text-neutral-500 hover:bg-neutral-100 hover:text-neutral-950 dark:border-white/10 dark:bg-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
+            />
+          </div>
+          <code className="block break-all rounded-md bg-white px-3 py-2 font-mono text-sm text-neutral-950 dark:bg-zinc-900 dark:text-zinc-100">
+            {COMMUNITY_TOKEN_CA}
+          </code>
+          <Link
+            href={COMMUNITY_TOKEN_DEX_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-neutral-900 transition-colors hover:text-neutral-600 dark:text-zinc-100 dark:hover:text-zinc-300"
+          >
+            View on DEX Screener
+            <ExternalLink className="h-3.5 w-3.5" />
+          </Link>
+        </div>
+      </DocsSection>
 
       <DocsSection title="Create a new project">
         <DocsCodeBlock code="npx create-next-app@latest my-app" />
