@@ -354,6 +354,43 @@ export function ImageTrailDemo() {
     ],
   },
 
+  "cylinder-carousel": {
+    dependencies: "npm install clsx tailwind-merge",
+    includeUtils: true,
+    usageCode: `import { CylinderCarousel } from "@/components/ui/cylinder-carousel"
+
+const IMAGES = [
+  { src: "https://images.unsplash.com/photo-1540968221243-29f5d70540bf?w=280", alt: "jellyfish" },
+  { src: "https://images.unsplash.com/photo-1596135187959-562c650d98bc?w=280", alt: "jellyfish" },
+  { src: "https://images.unsplash.com/photo-1628944682084-831f35256163?w=280", alt: "jellyfish" },
+]
+
+export function CylinderCarouselDemo() {
+  return (
+    <div className="w-full bg-[#fff3ed]">
+      <CylinderCarousel images={IMAGES} />
+    </div>
+  )
+}`,
+    props: [
+      { prop: "images", type: "CarouselImage[]", defaultValue: "-", description: "Array of images to display in the 3D cylinder." },
+      { prop: "className", type: "string", defaultValue: "-", description: "Additional classes for the outer wrapper." },
+      { prop: "containerClassName", type: "string", defaultValue: "-", description: "Additional classes for the rotating container." },
+      { prop: "cardClassName", type: "string", defaultValue: "-", description: "Additional classes for the individual image cards." },
+      { prop: "animationDuration", type: "number", defaultValue: "32", description: "Duration of a full rotation in seconds." },
+      { prop: "cardWidth", type: "number", defaultValue: "250", description: "Width of each card in pixels. Affects cylinder radius calculation." },
+    ],
+    additionalPropSections: [
+      {
+        title: "CarouselImage",
+        data: [
+          { prop: "src", type: "string", defaultValue: "-", description: "Image URL." },
+          { prop: "alt", type: "string", defaultValue: "-", description: "Optional alt text." },
+        ],
+      },
+    ],
+  },
+
   "perspective-carousel": {
     dependencies: "npm install framer-motion lucide-react clsx tailwind-merge",
     includeUtils: true,

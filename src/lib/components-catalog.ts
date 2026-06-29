@@ -57,6 +57,7 @@ export const COMPONENT_CATEGORIES: ComponentCategory[] = [
       { name: "Interactive Book", slug: "interactive-book", description: "3D page-flip style book", componentName: "interactive-book" },
       { name: "Image Trail", slug: "image-trail", description: "Cursor-following image trail effect", componentName: "image-trail", isNew: true },
       { name: "Perspective Carousel", slug: "perspective-carousel", description: "Spring-driven 3D image carousel", componentName: "perspective-carousel", isNew: true },
+      { name: "Cylinder Carousel", slug: "cylinder-carousel", description: "Infinite CSS 3D cylinder image carousel", componentName: "cylinder-carousel", isNew: true },
       { name: "Diagonal Carousel", slug: "diagonal-carousel", description: "Spring-driven diagonal image carousel", componentName: "diagonal-carousel", isNew: true },
       { name: "Pixelated Image Trail", slug: "pixelated-image-trail", description: "Cursor trail image reveal", componentName: "pixelated-image-trail" },
       { name: "Interactive Keyboard", slug: "interactive-keyboard", description: "Animated physical keyboard UI", componentName: "interactive-keyboard", isNew: true },
