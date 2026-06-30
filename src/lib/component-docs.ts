@@ -1451,4 +1451,25 @@ export function Demo() {
       { prop: "scale", type: "number", defaultValue: "0.8", description: "Scale factor." },
     ],
   },
+  
+  "scroll-dissolve-reveal": {
+    dependencies: "npm install @react-three/fiber @react-three/drei three framer-motion clsx tailwind-merge",
+    includeUtils: true,
+    usageCode: `import { ScrollDissolveReveal } from "@/components/ui/scroll-dissolve-reveal"
+
+export function ScrollDissolveRevealDemo() {
+  return (
+    <ScrollDissolveReveal
+      imageFront="/front.jpg"
+      imageBack="/back.jpg"
+    />
+  )
+}`,
+    props: [
+      { prop: "imageFront", type: "string", defaultValue: "-", description: "The image to display initially and dissolve away." },
+      { prop: "imageBack", type: "string", defaultValue: "-", description: "The image to reveal underneath the dissolve effect." },
+      { prop: "className", type: "string", defaultValue: "-", description: "Additional CSS classes for the sticky container." },
+      { prop: "containerClassName", type: "string", defaultValue: "-", description: "Additional CSS classes for the outer scroll container." },
+    ],
+  },
 };
