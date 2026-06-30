@@ -258,7 +258,7 @@ const Scene = ({ imageFront, imageBack, scrollYProgress }: SceneProps) => {
       uTexture: { value: texture1 },
       uResolution: { value: new THREE.Vector2(size.width, size.height) },
       uImageResolution: {
-        value: new THREE.Vector2(texture1.image.width, texture1.image.height),
+        value: new THREE.Vector2((texture1.image as any).width, (texture1.image as any).height),
       },
       uDissolve: { value: 0.0 },
       uCenter: { value: new THREE.Vector2(0.5, 0.5) },
@@ -275,7 +275,7 @@ const Scene = ({ imageFront, imageBack, scrollYProgress }: SceneProps) => {
       uTexture: { value: texture2 },
       uResolution: { value: new THREE.Vector2(size.width, size.height) },
       uImageResolution: {
-        value: new THREE.Vector2(texture2.image.width, texture2.image.height),
+        value: new THREE.Vector2((texture2.image as any).width, (texture2.image as any).height),
       },
       uDissolve: { value: 0.0 },
       uCenter: { value: new THREE.Vector2(0.5, 0.5) },
