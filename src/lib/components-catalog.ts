@@ -59,6 +59,7 @@ export const COMPONENT_CATEGORIES: ComponentCategory[] = [
       { name: "Perspective Carousel", slug: "perspective-carousel", description: "Spring-driven 3D image carousel", componentName: "perspective-carousel", isNew: true },
       { name: "Cylinder Carousel", slug: "cylinder-carousel", description: "Infinite CSS 3D cylinder image carousel", componentName: "cylinder-carousel", isNew: true },
       { name: "Diagonal Carousel", slug: "diagonal-carousel", description: "Spring-driven diagonal image carousel", componentName: "diagonal-carousel", isNew: true },
+      { name: "Ripple Displacement Slider", slug: "ripple-displacement-slider", description: "Interactive full-screen WebGL slider with fluid ripple displacement transitions", componentName: "ripple-displacement-slider", isNew: true },
       { name: "Pixelated Image Trail", slug: "pixelated-image-trail", description: "Cursor trail image reveal", componentName: "pixelated-image-trail" },
       { name: "Interactive Keyboard", slug: "interactive-keyboard", description: "Animated physical keyboard UI", componentName: "interactive-keyboard", isNew: true },
       { name: "Typing Keyboard", slug: "typing-keyboard", description: "3D isometric keyboard with auto-typing screen", componentName: "typing-keyboard", isNew: true },

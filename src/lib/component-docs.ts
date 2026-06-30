@@ -815,6 +815,39 @@ export function SpotlightMarqueeDemo() {
       { prop: "className", type: "string", defaultValue: "-", description: "Additional CSS classes." },
     ],
   },
+  
+  "ripple-displacement-slider": {
+    dependencies: "npm install three @types/three gsap clsx tailwind-merge",
+    includeUtils: true,
+    manualNotes: [
+      "This component requires Three.js for WebGL displacement effects and GSAP for timing.",
+      "The component auto-loops every 5 seconds. Provide your own images via the 'slides' prop.",
+      "The component detects window width and reduces animation duration slightly on mobile for a snappier feel.",
+    ],
+    usageCode: `import { RippleDisplacementSlider } from "@/components/ui/ripple-displacement-slider"
+
+export function RippleDisplacementSliderDemo() {
+  return (
+    <div className="h-[600px] w-full">
+      <RippleDisplacementSlider />
+    </div>
+  )
+}`,
+    props: [
+      { prop: "slides", type: "RippleSlide[]", defaultValue: "DEFAULT_SLIDES", description: "Array of slides containing titles, descriptions, and background images." },
+      { prop: "className", type: "string", defaultValue: "-", description: "Additional CSS classes applied to the container." },
+    ],
+    additionalPropSections: [
+      {
+        title: "RippleSlide",
+        data: [
+          { prop: "title", type: "string", defaultValue: "-", description: "Main heading text for the slide." },
+          { prop: "description", type: "string", defaultValue: "-", description: "Secondary descriptive text." },
+          { prop: "image", type: "string", defaultValue: "-", description: "URL to the image used as the background texture." },
+        ]
+      }
+    ]
+  },
 
   "logo-slider": {
     dependencies: "npm install framer-motion clsx tailwind-merge",

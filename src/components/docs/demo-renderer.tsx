@@ -45,6 +45,7 @@ const DEMO_COMPONENTS: Record<string, React.ComponentType> = {
   "perspective-carousel": dynamic(() => import("@/components/docs/perspective-carousel").then((m) => ({ default: m.PerspectiveCarouselDemo })), { ssr: false, loading: LOADING }),
   "cylinder-carousel": dynamic(() => import("@/components/docs/cylinder-carousel-demo").then((m) => ({ default: m.CylinderCarouselDemo })), { ssr: false, loading: LOADING }),
   "diagonal-carousel": dynamic(() => import("@/components/docs/diagonal-carousel").then((m) => ({ default: m.DiagonalCarouselDemo })), { ssr: false, loading: LOADING }),
+  "ripple-displacement-slider": dynamic(() => import("@/components/ui/ripple-displacement-slider").then((m) => ({ default: m.default })), { ssr: false, loading: LOADING }),
   "pixelated-image-trail": dynamic(() => import("@/components/docs/pixelated-image-trail").then((m) => ({ default: m.default })), { ssr: false, loading: LOADING }),
   "interactive-keyboard": dynamic(() => import("@/components/docs/interactive-keyboard-demo").then((m) => ({ default: m.InteractiveKeyboardDemo })), { ssr: false, loading: LOADING }),
   "elastic-stack": dynamic(() => import("@/components/docs/elastic-stack-demo").then((m) => ({ default: m.ElasticStackDemo })), { ssr: false, loading: LOADING }),
