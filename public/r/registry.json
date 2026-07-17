@@ -872,6 +872,16 @@
     ]
   },
   {
+    "name": "search-modal",
+    "dependencies": [
+      "@phosphor-icons/react"
+    ],
+    "type": "registry:ui",
+    "files": [
+      "public/r/search-modal.json"
+    ]
+  },
+  {
     "name": "select",
     "dependencies": [
       "lucide-react",

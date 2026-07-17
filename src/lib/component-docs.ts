@@ -1511,6 +1511,56 @@ export function VerseCardsDemo() {
     ],
   },
 
+  "search-modal": {
+    dependencies: "npm install @phosphor-icons/react clsx tailwind-merge",
+    includeUtils: true,
+    manualNotes: [
+      "Every section — tags, results, quick actions, files — is data-driven and optional. Omit a prop (or pass an empty array) and that section simply doesn't render.",
+      "Typing in the search bar live-filters the result rows by name and meta text, and the \"Last search\" count reflects the visible rows. Tags are removable with their close button.",
+      "Icons are Phosphor components passed as nodes (tag icons, per-row actions, quick-action and file icons), so you can swap in any icon set. The `⌘F` hint is a plain styled `<kbd>` — no image asset needed.",
+      "By default it renders as an inline panel. Set `modal` to turn it into a centered overlay you toggle with ⌘K / Ctrl+K (configurable via `hotkey`); Escape, the backdrop, and the count all work, and the input auto-focuses on open. Drive it controlled with `open` + `onOpenChange`, or leave it uncontrolled with `defaultOpen`.",
+      "In modal mode the overlay is `fixed inset-0`. To scope it inside a positioned container (like the preview), pass `overlayClassName` to override the positioning — e.g. `absolute items-center p-6`.",
+      "The surface adapts to light and dark mode; result avatars fall back to a neutral circle when no `avatar` URL is given.",
+    ],
+    usageCode: `import { useState } from "react"
+import { SearchModal } from "@/components/ui/search-modal"
+
+export function SearchModalDemo() {
+  const [open, setOpen] = useState(false)
+
+  return (
+    // Press ⌘K / Ctrl+K to open, Escape to close
+    <SearchModal
+      modal
+      open={open}
+      onOpenChange={setOpen}
+      results={[
+        { name: "Jason Woordheart", meta: "jason@dribbble.com", avatar: "/avatars/jason.jpg" },
+        { name: "Rob Miller", meta: "rob@icloud.com" },
+      ]}
+    />
+  )
+}`,
+    props: [
+      { prop: "modal", type: "boolean", defaultValue: "false", description: "Render as a centered overlay with a backdrop instead of an inline panel." },
+      { prop: "open", type: "boolean", defaultValue: "-", description: "Controlled open state (modal mode)." },
+      { prop: "defaultOpen", type: "boolean", defaultValue: "false", description: "Uncontrolled initial open state (modal mode)." },
+      { prop: "onOpenChange", type: "(open: boolean) => void", defaultValue: "-", description: "Called when the modal opens (true) or closes (false)." },
+      { prop: "hotkey", type: "string | null", defaultValue: "'k'", description: "Key (with ⌘/Ctrl) that toggles the modal. Set null to disable." },
+      { prop: "closeOnEscape", type: "boolean", defaultValue: "true", description: "Close the modal when Escape is pressed." },
+      { prop: "overlayClassName", type: "string", defaultValue: "-", description: "Classes for the overlay wrapper — override 'fixed' with 'absolute' to scope it." },
+      { prop: "placeholder", type: "string", defaultValue: "'Search for action, people, instruments'", description: "Placeholder for the search input." },
+      { prop: "tags", type: "SearchTag[]", defaultValue: "Sample set", description: "Removable filter tags: { label, icon? }." },
+      { prop: "results", type: "SearchResult[]", defaultValue: "Sample set", description: "Result rows (live-filtered): { name, meta?, avatar?, href?, actions? }." },
+      { prop: "quickActions", type: "QuickAction[]", defaultValue: "Sample set", description: "Quick-action rows: { label, icon?, shortcut?, onClick? }." },
+      { prop: "files", type: "SearchFile[]", defaultValue: "Sample set", description: "File rows: { name, ext?, icon?, verified?, onShare? }." },
+      { prop: "defaultQuery", type: "string", defaultValue: "''", description: "Initial query value." },
+      { prop: "onQueryChange", type: "(query: string) => void", defaultValue: "-", description: "Called as the query changes." },
+      { prop: "onSelectResult", type: "(result: SearchResult, index: number) => void", defaultValue: "-", description: "Called when a result row is clicked." },
+      { prop: "className", type: "string", defaultValue: "-", description: "Additional classes for the root element." },
+    ],
+  },
+
   "faq-accordion": {
     dependencies: "npm install clsx tailwind-merge",
     includeUtils: true,

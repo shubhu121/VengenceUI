@@ -90,6 +90,7 @@ const DEMO_COMPONENTS: Record<string, React.ComponentType> = {
   "music-player": dynamic(() => import("@/components/docs/music-player-demo").then((m) => ({ default: m.MusicPlayerDemo })), { ssr: false, loading: LOADING }),
   "awwwards-nav": dynamic(() => import("@/components/docs/awwwards-nav-demo").then((m) => ({ default: m.AwwwardsNavDemo })), { ssr: false, loading: LOADING }),
   "verse-cards": dynamic(() => import("@/components/docs/verse-cards-demo").then((m) => ({ default: m.VerseCardsDemo })), { ssr: false, loading: LOADING }),
+  "search-modal": dynamic(() => import("@/components/docs/search-modal-demo").then((m) => ({ default: m.SearchModalDemo })), { ssr: false, loading: LOADING }),
 };
 
 export function DemoRenderer({ slug }: { slug: string }) {
