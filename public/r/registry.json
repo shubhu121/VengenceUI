@@ -210,6 +210,16 @@
     ]
   },
   {
+    "name": "circular-gallery",
+    "dependencies": [
+      "gsap"
+    ],
+    "type": "registry:ui",
+    "files": [
+      "public/r/circular-gallery.json"
+    ]
+  },
+  {
     "name": "code-block",
     "dependencies": [],
     "type": "registry:ui",

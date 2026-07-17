@@ -1561,6 +1561,42 @@ export function SearchModalDemo() {
     ],
   },
 
+  "circular-gallery": {
+    dependencies: "npm install gsap clsx tailwind-merge",
+    includeUtils: true,
+    manualNotes: [
+      "Cards are laid out around a tilted 3D ring with GSAP. The ring auto-rotates gently on its own; drag it to spin, move the cursor to parallax the tilt, and hover a card to lift it and mirror it in the centre preview.",
+      "The original's full-page ScrollTrigger is replaced with drag + auto-rotation, so it works inside any sized container — it fills its parent (`h-full w-full`), so give it an explicit height.",
+      "Pass an `images` array; it's cycled around the ring, so a handful of images fills a large `count`. With no images, neutral placeholder cards are shown. Serve images same-origin (or CORS-enabled) and keep them small — one file is reused many times.",
+      "Tune the look with `count`, `radius`, `tilt`, and `itemWidth`/`itemHeight`. Higher `count` means more DOM nodes, so keep it reasonable on low-end devices.",
+      "Set `autoRotate={false}` for a static ring, `parallax={false}` to lock the tilt, or `showPreview={false}` to hide the centre image. Adapts to light and dark mode.",
+    ],
+    usageCode: `import { CircularGallery } from "@/components/ui/circular-gallery"
+
+const images = Array.from({ length: 15 }, (_, i) => \`/gallery/img\${i + 1}.jpg\`)
+
+export function CircularGalleryDemo() {
+  return (
+    <div className="relative h-[600px] w-full overflow-hidden rounded-xl">
+      <CircularGallery images={images} />
+    </div>
+  )
+}`,
+    props: [
+      { prop: "images", type: "string[]", defaultValue: "-", description: "Image URLs, cycled around the ring. Omit for neutral placeholder cards." },
+      { prop: "count", type: "number", defaultValue: "150", description: "Number of cards in the ring." },
+      { prop: "tilt", type: "number", defaultValue: "55", description: "Base tilt of the ring in degrees (rotateX)." },
+      { prop: "radius", type: "number", defaultValue: "400", description: "Ring radius in px (card distance from centre)." },
+      { prop: "itemWidth", type: "number", defaultValue: "45", description: "Card width in px." },
+      { prop: "itemHeight", type: "number", defaultValue: "60", description: "Card height in px." },
+      { prop: "autoRotate", type: "boolean", defaultValue: "true", description: "Slowly spin the ring on its own." },
+      { prop: "autoRotateSpeed", type: "number", defaultValue: "3", description: "Auto-rotation speed in degrees per second." },
+      { prop: "showPreview", type: "boolean", defaultValue: "true", description: "Show the large centre preview that follows the hovered card." },
+      { prop: "parallax", type: "boolean", defaultValue: "true", description: "Parallax the ring's tilt toward the cursor." },
+      { prop: "className", type: "string", defaultValue: "-", description: "Additional classes for the root element." },
+    ],
+  },
+
   "faq-accordion": {
     dependencies: "npm install clsx tailwind-merge",
     includeUtils: true,

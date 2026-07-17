@@ -69,6 +69,7 @@ export const COMPONENT_CATEGORIES: ComponentCategory[] = [
       { name: "Interactive Particles", slug: "interactive-particles", description: "Image-sampled particles that scatter around the cursor", componentName: "interactive-particles", isNew: true },
       { name: "Music Player", slug: "music-player", description: "Collapsible glass music player with equalizer and seekable progress", componentName: "music-player", isNew: true },
       { name: "Verse Cards", slug: "verse-cards", description: "Nav trigger that fans a deck of cards up with a GSAP reveal", componentName: "verse-cards", isNew: true },
+      { name: "Circular Gallery", slug: "circular-gallery", description: "Relaxing 3D ring of images with drag-spin, parallax tilt, and center preview", componentName: "circular-gallery", isNew: true },
     ],
   },
   {

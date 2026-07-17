@@ -91,6 +91,7 @@ const DEMO_COMPONENTS: Record<string, React.ComponentType> = {
   "awwwards-nav": dynamic(() => import("@/components/docs/awwwards-nav-demo").then((m) => ({ default: m.AwwwardsNavDemo })), { ssr: false, loading: LOADING }),
   "verse-cards": dynamic(() => import("@/components/docs/verse-cards-demo").then((m) => ({ default: m.VerseCardsDemo })), { ssr: false, loading: LOADING }),
   "search-modal": dynamic(() => import("@/components/docs/search-modal-demo").then((m) => ({ default: m.SearchModalDemo })), { ssr: false, loading: LOADING }),
+  "circular-gallery": dynamic(() => import("@/components/docs/circular-gallery-demo").then((m) => ({ default: m.CircularGalleryDemo })), { ssr: false, loading: LOADING }),
 };
 
 export function DemoRenderer({ slug }: { slug: string }) {
