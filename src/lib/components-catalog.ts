@@ -113,6 +113,7 @@ export const COMPONENT_CATEGORIES: ComponentCategory[] = [
       { name: "Notch Navbar", slug: "notch-navbar", description: "Responsive navbar with a sleek cutout notch design", componentName: "notch-navbar", isNew: true },
       { name: "Gooey Search", slug: "gooey-search", description: "Morphing gooey blob search button with animated results", componentName: "gooey-search", isNew: true },
       { name: "Animated Footer", slug: "animated-footer", description: "Reveal-on-scroll footer with cursor-lit ASCII art and parallax", componentName: "animated-footer", isNew: true },
+      { name: "Awwwards Nav", slug: "awwwards-nav", description: "Glass bottom nav that expands into a mega-menu", componentName: "awwwards-nav", isNew: true },
     ],
   },
   {

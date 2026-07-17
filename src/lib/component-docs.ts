@@ -1443,6 +1443,39 @@ export function MusicPlayerDemo() {
     ],
   },
 
+  "awwwards-nav": {
+    dependencies: "npm install gsap @phosphor-icons/react clsx tailwind-merge",
+    includeUtils: true,
+    manualNotes: [
+      "The bar animates its height with GSAP (`power4.inOut`); the expand/collapse motion, fade of the inline links, and icon flip are all driven imperatively, so no extra animation config is needed.",
+      "Positioning is left to you via `className`. It defaults to `fixed bottom-6 left-1/2 -translate-x-1/2` for real page use — override with `absolute` inside a `position: relative` parent to contain it (as the preview does).",
+      "Pass your own `items` (the inline links) and `columns` (the mega-menu). Each column is `{ title, links: { label, href }[] }`; the dashed dividers between columns are drawn automatically.",
+      "It looks best over imagery or a dark backdrop — the surface is translucent black with a blur, so a busy light background will show through.",
+      "Use `onOpenChange` to react to the panel opening and closing (e.g. dim the page behind it).",
+    ],
+    usageCode: `import { AwwwardsNav } from "@/components/ui/awwwards-nav"
+
+export function AwwwardsNavDemo() {
+  return (
+    <AwwwardsNav
+      items={[
+        { label: "Home", href: "#" },
+        { label: "Nominees", href: "#" },
+        { label: "Directory", href: "#" },
+        { label: "Collections", href: "#" },
+      ]}
+    />
+  )
+}`,
+    props: [
+      { prop: "items", type: "AwwwardsNavLink[]", defaultValue: "Sample set", description: "Inline links shown in the collapsed bar: { label, href }." },
+      { prop: "columns", type: "AwwwardsNavColumn[]", defaultValue: "Sample set", description: "Columns revealed in the expanded mega-menu: { title, links }." },
+      { prop: "moreLabel", type: "string", defaultValue: "'More'", description: "Label on the expand/collapse button." },
+      { prop: "onOpenChange", type: "(open: boolean) => void", defaultValue: "-", description: "Called whenever the panel opens (true) or closes (false)." },
+      { prop: "className", type: "string", defaultValue: "'fixed bottom-6 left-1/2 -translate-x-1/2'", description: "Extra classes for the root nav — use this to position it." },
+    ],
+  },
+
   "faq-accordion": {
     dependencies: "npm install clsx tailwind-merge",
     includeUtils: true,

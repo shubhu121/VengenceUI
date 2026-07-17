@@ -93,6 +93,17 @@
     ]
   },
   {
+    "name": "awwwards-nav",
+    "dependencies": [
+      "gsap",
+      "@phosphor-icons/react"
+    ],
+    "type": "registry:ui",
+    "files": [
+      "public/r/awwwards-nav.json"
+    ]
+  },
+  {
     "name": "badge",
     "dependencies": [
       "@radix-ui/react-slot"
